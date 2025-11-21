@@ -1,0 +1,26 @@
+# contextguard/base-config.yaml
+contextguard:
+  universal:
+    enabled: true
+    auto_detect: true
+    silent_mode: true
+    
+  monitoring:
+    real_time: true
+    metrics_collection: "lightweight"
+    alert_threshold: 0.95
+    
+  token_management:
+    total_budget: 5000  # Base, será ajustado
+    safety_margin: 0.1
+    compression_threshold: 0.8
+    
+  state_preservation:
+    checkpoint_enabled: true
+    recovery_enabled: true
+    continuity_guaranteed: true
+    
+  performance:
+    max_response_time: 30
+    efficiency_target: 0.85
+    quality_floor: 0.75
