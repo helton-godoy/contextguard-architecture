@@ -1,0 +1,42 @@
+# contextguard/research-project.yaml
+contextguard:
+  project_type: "research"
+  
+  token_budget:
+    total: 6500
+    system: 350
+    literature_review: 2500
+    methodology: 2000
+    experimental_data: 1600
+    conclusions: 1050
+  
+  workflow_patterns:
+    - literature_review
+    - gap_analysis
+    - methodology_design
+    - experimentation
+    - analysis
+    - writing
+  
+  importance_scores:
+    research_questions: 0.95
+    literature_sources: 0.9
+    methodology: 0.85
+    experimental_results: 0.85
+    theoretical_framework: 0.8
+    citations: 0.7
+    notes: 0.5
+  
+  compression_strategies:
+    literature: "key_findings"
+    methodology: "procedure_focus"
+    results: "statistical_summary"
+    writing: "structure_preserve"
+  
+  checkpoint_frequency:
+    literature_review: 3
+    gap_analysis: 2
+    methodology: 1  # Crítico
+    experimentation: 1  # Durante execução
+    analysis: 2
+    writing: 3
