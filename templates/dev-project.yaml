@@ -1,0 +1,38 @@
+# contextguard/dev-project.yaml
+contextguard:
+  project_type: "development"
+  
+  token_budget:
+    total: 6000  # Maior para desenvolvimento
+    system: 400
+    documentation: 2000
+    code_context: 2500
+    planning: 1100
+  
+  workflow_patterns:
+    - analysis
+    - design
+    - implementation
+    - testing
+    - documentation
+  
+  importance_scores:
+    requirements: 0.95
+    design_decisions: 0.9
+    code_structure: 0.85
+    test_cases: 0.8
+    comments: 0.6
+    debug_info: 0.3
+  
+  compression_strategies:
+    code_files: "semantic_summary"
+    requirements: "preserve_exact"
+    designs: "key_points"
+    tests: "coverage_focus"
+  
+  checkpoint_frequency:
+    analysis_phase: 2
+    design_phase: 3
+    implementation_phase: 1  # Frequente para código
+    testing_phase: 2
+    documentation_phase: 4
