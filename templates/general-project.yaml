@@ -1,0 +1,29 @@
+# contextguard/general-project.yaml
+contextguard:
+  project_type: "general"
+  
+  token_budget:
+    total: 5000
+    system: 300
+    general_context: 3000
+    history: 1000
+    output: 700
+  
+  workflow_patterns:
+    - general_task
+    - planning
+    - execution
+    - review
+  
+  importance_scores:
+    user_instructions: 0.95
+    current_task: 0.9
+    history: 0.7
+    reference_material: 0.6
+  
+  compression_strategies:
+    history: "summarize_oldest"
+    context: "relevance_filter"
+  
+  checkpoint_frequency:
+    default: 3
