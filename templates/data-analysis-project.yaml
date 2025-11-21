@@ -1,0 +1,38 @@
+# contextguard/data-analysis-project.yaml
+contextguard:
+  project_type: "data_analysis"
+  
+  token_budget:
+    total: 7000  # Maior para dados
+    system: 300
+    data_context: 3000
+    methodology: 2000
+    findings: 1700
+  
+  workflow_patterns:
+    - data_exploration
+    - hypothesis_formation
+    - analysis_execution
+    - results_interpretation
+    - reporting
+  
+  importance_scores:
+    datasets: 0.95
+    statistical_methods: 0.9
+    key_findings: 0.85
+    methodology_notes: 0.8
+    visualizations: 0.75
+    raw_output: 0.4
+  
+  compression_strategies:
+    datasets: "metadata_only"
+    statistical_output: "summary_statistics"
+    plots: "description_focus"
+    methodology: "procedure_essential"
+  
+  checkpoint_frequency:
+    exploration: 3
+    hypothesis: 2
+    analysis: 1  # Frequente durante processamento
+    interpretation: 2
+    reporting: 4
